@@ -1,5 +1,6 @@
 # shift_register 74hc595
 74hc595 shift register vezérlése MicroPython-al
+
 Ezt a MicroPython modult a demultiplexer vezérlésére írtam. Segítségével könnyedén kapcsolgathatjuk a lábakat. A modul neve csak ' s.py ' , könnyedén importálható. Különböző mcu-on próbáltam, teszteltem, amit az alábbiakban részletesen bemutatok.
 Mindenekelőtt telepíteni kell a Python 3 és az esptool alkalmazásokat (win10-re), amit a következő hivatkozásról lehet letölteni: [https://github.com/espressif/esptool](url). 
 
