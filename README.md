@@ -14,7 +14,7 @@ A program megnyitása után a Tools legördülő menüben válasszuk ki a COM (n
 1) Ha közvetlenül az ESP8266-ra szeretnénk csatlakozni Wifi-n
 ```
 - a uPyCraft prompt-ba írjuk a következőt,
-    **import webrepl_setup**
+    import webrepl_setup
 - engedélyezzük (E + Enter),
 - vidd be a jelszódat majd fogadd el (y + Enter),
 - ezek után az internet elérések között meg kell, hogy jelenjen az ESP modulunk,
@@ -26,10 +26,15 @@ A program megnyitása után a Tools legördülő menüben válasszuk ki a COM (n
 ```
 2) Ha helyi hálózaton keresztül szeretnén elérni az ESP8266-ot
 ```
+- a uPyCraft prompt-ba írjuk egyenként a következőket,
     import network
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
-    wlan.connect('ssid', 'password')
+    wlan.connect('ssid', 'password') # a helyi hálózatunk neve és jelszava
+    wlan.ifconfig()
+- az első kapott IP-n tudunk csatlakozni majd,
+- cseréljük ki a WebREPL alapértelmezett IP-ét a kiosztott IP-re és kapcsolódjunk.
 ```
+> A MicroPython "s.py" modulom ráírása az ESP-re
 
-A shift register MicroPython modulomat **"s.py"** (a file-ok között található) be kell húzni a uPyCraft ablakba.
+Az **"s.py"** file a repozitomból letölthető. A uPyCraft-ban a lépkedjünk a File-Open-re, és nyissuk meg az s.py file-t. A uPyCraft jobb oldalán kattintsunk a DowenloadAndRun (>) gombra. Ha nem megy próbáljuk ki-be kapcsolni az ESP-t. Ha feltöltötte akkor a uPyCraft bal felén, a device-ban megjelenik az s.py file. Az s.py -ra nyomjunk egy jobb gombot majd "Default Run"-t. Ezzel beállítottük, hogy tápra kapcsolva az ESP alapértelmezettként indítja az s.py modult.
