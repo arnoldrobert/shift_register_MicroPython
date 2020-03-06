@@ -44,8 +44,8 @@ Az **"s.py"** file a repozitomból letölthető. A uPyCraft-ban miután rácsatl
 
 Gyakorlatilag minden megegyezik az ESP-01 -nél leírtakkal, csak a lábkiosztás változik, mégpedig a következők szerint:
 ```
-Node        Shift Register
-Pin14       SER(adat)
-Pin12       RCLK(zar)
-Pin13       SRCLK(orajel)
+NodeMCU       Shift Register
+ D5(Pin14)       SER(adat)
+ D6(Pin12)       RCLK(zar)
+ D7(Pin13)       SRCLK(orajel)
 ```
