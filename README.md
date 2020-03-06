@@ -39,3 +39,13 @@ A program megnyitása után a Tools legördülő menüben válasszuk ki a COM (n
 > A MicroPython "s.py" modulom ráírása az ESP-re
 
 Az **"s.py"** file a repozitomból letölthető. A uPyCraft-ban miután rácsatlakoztunk a COM portunkra, lépkedjünk a File-Open-re, és nyissuk meg az s.py file-t. A uPyCraft jobb oldalán kattintsunk a DowenloadAndRun (>) gombra. Ha nem megy próbáljuk ki-be kapcsolni az ESP-t és újracsatlakoztatni a portra. Amikor feltöltötte, a uPyCraft bal felén, a device-ban megjelenik az s.py file (ha nem jelent meg akkor ki kell lépni a programból majd visszalépni). A uPyCraft bal oldalán a device-ben kattintsunk rá a boot.py file-ra és írjuk be import s (vagy valamelyik már meglévő import parancs után vesszővel elválasztva írjuk oda az s-t). Ezzel beállítottük, hogy tápra kapcsolva az ESP alapértelmezettként indítsa az s.py modult.
+
+> NodeMCU - esp8266-12 modulon
+
+Gyakorlatilag minden megegyezik az ESP-01 -nél leírtakkal, csak a lábkiosztás változik, mégpedig a következők szerint:
+```
+Node        Shift Register
+Pin14       SER(adat)
+Pin12       RCLK(zar)
+Pin13       SRCLK(orajel)
+```
