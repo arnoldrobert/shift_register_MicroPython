@@ -1,3 +1,7 @@
+# Autor: Arnold Róbert
+# A modul szabadon használható alakítható
+# Jó szórakozást '_'
+
 from machine import Pin
 import time
 
