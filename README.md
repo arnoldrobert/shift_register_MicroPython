@@ -57,5 +57,5 @@ NodeMCU       Shift Register
  D7(Pin13)       SRCLK(orajel)
 ```
 
-Az s.py modul részletes bemutatását a következő oldalon lehet elérni:  
+Az s.py modul részletes bemutatását a következő oldalon lehet elérni: https://github.com/arnoldrobert/s.py_modul_bemutatasa .
  
