@@ -49,10 +49,13 @@ A file-ok közé feltöltöttem az ESP-01 lábkiosztását esp8266_pinout.jpg n�
 
 > NodeMCU - esp8266-12 modulon
 
-Gyakorlatilag minden megegyezik az ESP-01 -nél leírtakkal, csak a lábkiosztás változik, mégpedig a következők szerint:
+Gyakorlatilag minden megegyezik az ESP-01 -nél leírtakkal, azzal a külömbséggel, hogy USB és bootloder segítségével programozzuk, valamint a lábkiosztás is változik a következők szerint:
 ```
 NodeMCU       Shift Register
  D5(Pin14)       SER(adat)
  D6(Pin12)       RCLK(zar)
  D7(Pin13)       SRCLK(orajel)
 ```
+
+Az s.py modul részletes bemutatását a következő oldalon lehet elérni:  
+ 
