@@ -1,6 +1,6 @@
-# Autor: Arnold Róbert
-# A modul szabadon használható alakítható
-# Jó szórakozást '_'
+# Autor: Arnold Robert
+# A modul szabadon hasznalhato alakithato
+# Jo szorakozast '_'
 
 from machine import Pin
 import time
